@@ -1,104 +1,100 @@
-.car-card-cointainer{
-    width: 304px;
-height: 388px;
-background: white;
-padding: 10px;
-margin-top: 70px;
-display: flex;
-flex-direction: column;
-gap: 30px;
+.car-card-cointainer {
+  width: 304px;
+  height: 388px;
+  background: white;
+  padding: 10px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.card-top {
+  display: flex;
+  justify-content: space-between;
+}
+.car-name {
+  display: flex;
+  flex-direction: column;
+}
+.car-name h3 {
+  color: var(--Secondary-500, #1a202c);
 
+  /* Bold/Type@20 */
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  letter-spacing: -0.6px;
 }
-.card-top{
-    display: flex;
-    justify-content: space-between;
-}
-.car-name{
-    display: flex;
-    flex-direction: column;
-}
-.car-name h3{
-    color: var(--Secondary-500, #1A202C);
+.car-name span {
+  color: var(--Secondary-300, var(--gray, #90a3bf));
 
-/* Bold/Type@20 */
-font-family: 'Plus Jakarta Sans';
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 150%; /* 30px */
-letter-spacing: -0.6px;
+  /* Bold/Type@14 */
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.28px;
 }
-.car-name span{
-    color: var(--Secondary-300, var(--gray, #90A3BF));
-
-/* Bold/Type@14 */
-font-family: 'Plus Jakarta Sans';
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: 150%; /* 21px */
-letter-spacing: -0.28px;
+.car-like-btn {
+  cursor: pointer;
 }
-.car-like-btn{
-    cursor: pointer;
+.car-card-logo {
+  width: 232px;
+  height: 108px;
+  flex-shrink: 0;
+  overflow: hidden;
 }
-.car-card-logo{
-    width: 232px;
-height: 108px;
-flex-shrink: 0;
-overflow: hidden;
-
+.car-card-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.car-card-logo img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.car-specification {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
 }
-.car-specification{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
+.car-specification-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
 }
-.specification-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+.car-specification-box {
+  color: var(--Secondary-300, var(--gray, #90a3bf));
+  font-size: 14px;
 }
-.specification-box{
-    color: var(--Secondary-300, var(--gray, #90A3BF));
-    font-size: 14px;
-
+.carcard-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.carcard-price{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+.rent-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
-.rent-price{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+.rent-price span {
+  color: #90a3bf;
 }
-.rent-price span{
-    color: #90A3BF;
-}
-.rent-btn button{
-    display: flex;
-width: 116px;
-height: 44px;
-padding: 0px 20px;
-justify-content: center;
-align-items: center;
-gap: 8px;
-border-radius: 4px;
-background: var(--blue, #3563E9);
-border: none;
-margin-top: 30px;
-cursor: pointer;
-font-family: 'Roboto';
-color: white;
+.rent-btn button {
+  display: flex;
+  width: 116px;
+  height: 44px;
+  padding: 0px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: var(--blue, #3563e9);
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  font-family: "Roboto";
+  color: white;
 }

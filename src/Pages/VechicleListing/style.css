@@ -1,0 +1,228 @@
+.vehicle-container {
+  width: 100%;
+  height: fit-content;
+  background: #f6f7f9;
+}
+.vehiclelist-box {
+  display: flex;
+  padding: 30px;
+
+  gap: 20px;
+}
+.vehiclelist-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25%px;
+}
+.dropdown {
+  width: 350px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  background: var(--white, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.price-range {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.price-range-heading h1 {
+  color: var(--Black, #333);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.price-range-heading span {
+  color: var(--Black, #333);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.price-range-meter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.price-range-meter-text {
+  width: 343px;
+  display: flex;
+  justify-content: space-between;
+}
+.price-range-meter-bar {
+  width: 343px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price-range-meter-bar span {
+  width: 18px;
+  height: 18px;
+  background: var(--blue, #3563e9);
+  stroke-width: 2px;
+  stroke: var(--white, #fff);
+  border-radius: 50%;
+}
+.price-range-meter-bar h3 {
+  background: #3563e9;
+  width: 333px;
+  height: 2px;
+}
+.min-max-range {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
+.min-max-range span {
+  color: var(--gray, #a3aaae);
+  text-align: right;
+  font-family: "Poppins";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.vehicle-list-btn {
+  width: 354px;
+  height: 59px;
+  background: var(--blue, #3563e9);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vehicle-list-btn span {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+.vehiclelist-right {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 75%;
+  align-items: center;
+  justify-content: space-around;
+}
+.condition {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.condition-heading span {
+  color: var(--Black, #333);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.condition-box {
+  display: inline-flex;
+  padding: 9px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: var(--white, #fff);
+}
+.condition-box span {
+  color: var(--Black, #333);
+  font-family: "Poppins";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.condition-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.fule {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.fule-heading span {
+  color: var(--Black, #333);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.fule-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.fule-box {
+  display: inline-flex;
+  padding: 9px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: var(--white, #fff);
+}
+.fule-box span {
+  color: var(--Black, #333);
+  font-family: "Poppins";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media screen and (max-width: 780px) {
+  .vehiclelist-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .vehiclelist-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vehiclelist-right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .dropdown {
+    width: 250px;
+    height: 50px;
+  }
+  .price-range {
+    width: 250px;
+  }
+  .price-range-meter-bar {
+    width: 250px;
+  }
+  .price-range-meter-text {
+    width: 250px;
+  }
+  .vehicle-list-btn {
+    width: 250px;
+  }
+}
