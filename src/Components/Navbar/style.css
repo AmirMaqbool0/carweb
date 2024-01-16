@@ -159,6 +159,7 @@
     justify-content: center;
     margin-top: 20px;
     gap: 70px;
+    list-style: none;
   }
   .shownav ul li a {
     color: white !important;
@@ -170,6 +171,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
   }
   .menu-btn {
     display: block;

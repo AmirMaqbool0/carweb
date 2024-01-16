@@ -450,4 +450,18 @@
     display: flex;
     gap: 10px;
   }
+  .people-review-name h2{
+font-size: 16px;
+  } .people-review-name span{
+ font-size: 16px;
+  }
+  .people-review-upper {
+    display: flex;
+    gap: 0;
+  }
+  .people-review-logo{
+   
+      width: 36px;
+      height: 36px;
+  }
 }

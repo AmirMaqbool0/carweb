@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 
 import CarHistory from "../../Assests/carcard.png";
-import { Radar, Fuel, UserRound } from "lucide-react";
+import { Radar, Fuel, UserRound, Star } from "lucide-react";
 const HistoryCarCard = () => {
+  const [popUp, setPopUp] = useState(false);
+  const showpopup = () => {
+    setPopUp(!popUp);
+  };
   return (
     <div className="history-car-card-container">
       <div className="history-car-card-header">
@@ -13,7 +17,7 @@ const HistoryCarCard = () => {
         </div>
         <div className="history-card-btn">
           <span>Cencel</span>
-          <button>Return</button>
+          <button onClick={showpopup}>Return</button>
         </div>
       </div>
       <div className="history-card-row2">
@@ -59,6 +63,29 @@ const HistoryCarCard = () => {
           </div>
         </div>
       </div>
+      {popUp && (
+        <div className="pop-up-container">
+          <div className="pop-up-box">
+            <div className="pop-up-box-heading">
+              <h1>Thank you!</h1>
+              <span>Please rate your trip</span>
+            </div>
+            <div className="pop-up-box-rating">
+              {Array(5)
+                .fill()
+                .map((item, i) => (
+                  <Star fill="yellow" />
+                ))}
+            </div>
+            <div className="pop-up-box-message">
+              <input type="text" placeholder="Message" />
+            </div>
+            <div className="pop-up-btn">
+              <button onClick={showpopup}>Send</button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

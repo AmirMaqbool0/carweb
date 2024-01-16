@@ -219,3 +219,96 @@
     font-size: 12px;
   }
 }
+.pop-up-container{
+  width: 100%;
+  background: rgb(107, 106, 106,0.6);
+  position: absolute;
+  inset: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pop-up-box{
+  width: 390px;
+height: 436px;
+border-radius: 15px;
+background: #FFF;
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding: 20px;
+align-items: center;
+justify-content: center;
+}
+.pop-up-box-heading{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pop-up-box-heading h1{
+  color: #0F0B03;
+  text-align: center;
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.pop-up-box-heading span{
+  color: var(--Gray, #8B8989);
+  text-align: center;
+  font-family: 'Satoshi';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 185%; /* 25.9px */
+}
+.pop-up-box-rating{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.pop-up-box-message{
+  width: 352px;
+height: 128px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 2px solid #E0E4F5;
+background: #FFF;
+position: relative;
+}
+.pop-up-box-message input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+.pop-up-btn button{
+  width: 350px;
+height: 55px;
+flex-shrink: 0;
+background: #3563E9;
+cursor: pointer;
+color: #FFF;
+text-align: center;
+font-family: 'Satoshi';
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+border: none;
+}
+@media screen and (max-width:450px) {
+ .pop-up-box{
+  width: 90%;
+ } 
+ .pop-up-box-message{
+  width: 100%;
+ }
+ .pop-up-btn button{
+  width: 300px;
+ }
+}

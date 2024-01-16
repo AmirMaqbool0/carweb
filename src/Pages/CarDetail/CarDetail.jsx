@@ -107,7 +107,7 @@ const CarDetail = () => {
                     {Array(5)
                       .fill()
                       .map((item, i) => (
-                        <Star fill="yellow" />
+                        <Star fill="yellow" size={16}/>
                       ))}
                   </div>
                 </div>
