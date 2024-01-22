@@ -7,15 +7,18 @@ import CarCard from "../../Components/CarCard/CarCard";
 import { Briefcase } from "lucide-react";
 import Footer from "../../Components/Footer/Footer";
 import { NavLink } from "react-router-dom";
+import Vector from '../../Assests/Vector.png'
+import Subscribe from '../../Assests/subscribe.jpg'
+import {HomeContainer,CarCards,CarCardsTop,CarCardBoxeses,ServicesSection,ServicesBox,ServicesHeading,ServicesCards,ServicesCard,ServicesCardLogo,ServiceCardHeading,ServiceCardText,SubscribeSection,SubscribeContainer,SubscribeText,SubscribeInput,SubscribeInputText,SubscribeInputBox}  from './style.js'
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <HomeContainer>
       <Navbar />
       <HomeBanner />
       <Discription />
-      <div className="car-cards">
-        <div className="car-cards-top">
+      <CarCards>
+        <CarCardsTop>
           <span>Popular Car</span>
           <span>
             <NavLink to={"/vehiclelist"}>
@@ -23,75 +26,58 @@ const Home = () => {
               <a href="$">View All</a>
             </NavLink>
           </span>
-        </div>
-        <div className="car-card-boxses">
+        </CarCardsTop>
+        <CarCardBoxeses>
           <CarCard />
           <CarCard />
           <CarCard />
           <CarCard />
-        </div>
-      </div>
-      <div className="services-section">
-        <div className="services-box">
-          <div className="services-heading">
+        </CarCardBoxeses>
+      </CarCards>
+      <ServicesSection>
+        <ServicesBox>
+          <ServicesHeading>
             <h3>Fell the best experience with our luxury car</h3>
-          </div>
-          <div className="services-cards">
-            <div className="services-card">
-              <div className="services-card-logo">
+          </ServicesHeading>
+          <ServicesCards>
+            {
+              Array(3).fill().map((item,i)=>
+              <ServicesCard>
+              <ServicesCardLogo imgurl={Vector}>
                 <Briefcase size={40} color="#ffffff" />
-              </div>
-              <div className="service-card-heading">
+              </ServicesCardLogo>
+              <ServiceCardHeading>
                 <h3>Book with flexibility</h3>
-              </div>
-              <div className="service-card-text">
+              </ServiceCardHeading>
+              <ServiceCardText>
                 <span>Easily find car and book with no change fees.</span>
-              </div>
-            </div>
-            <div className="services-card">
-              <div className="services-card-logo">
-                <Briefcase size={40} color="#ffffff" />
-              </div>
-              <div className="service-card-heading">
-                <h3>Book with flexibility</h3>
-              </div>
-              <div className="service-card-text">
-                <span>Easily find car and book with no change fees.</span>
-              </div>
-            </div>
-            <div className="services-card">
-              <div className="services-card-logo">
-                <Briefcase size={40} color="#ffffff" />
-              </div>
-              <div className="service-card-heading">
-                <h3>Book with flexibility</h3>
-              </div>
-              <div className="service-card-text">
-                <span>Easily find car and book with no change fees.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="subscribe-section">
-        <div className="subscribe-container">
-          <div className="subscribe-text">
+              </ServiceCardText>
+            </ServicesCard>
+              )
+            }
+          
+          </ServicesCards>
+        </ServicesBox>
+      </ServicesSection>
+      <SubscribeSection>
+        <SubscribeContainer subimg={Subscribe}>
+          <SubscribeText>
             <h2>become a driver</h2>
             <h1>Your time. Your goals. You're the boss.</h1>
-          </div>
-          <div className="subscribe-input">
-            <div className="subscribe-input-text">
+          </SubscribeText>
+          <SubscribeInput>
+            <SubscribeInputText>
               <span>suscribe and joins us</span>
-              <div className="subscribe-input-box">
+              <SubscribeInputBox>
                 <input type="text" placeholder="Email" />
                 <button>Next</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              </SubscribeInputBox>
+            </SubscribeInputText>
+          </SubscribeInput>
+        </SubscribeContainer>
+      </SubscribeSection>
       <Footer />
-    </div>
+      </HomeContainer>
   );
 };
 
