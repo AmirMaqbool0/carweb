@@ -1,142 +1,91 @@
 .discription-cointainer {
-  width: 100%;
-  /* height: 100vh; */
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 30px;
-  background: #f6f7f9;
+
 }
 .discription-logo {
-  display: flex;
-  position: relative;
+  
 }
 .discription-logo img {
-  position: absolute;
+ 
 }
 .left-circle svg {
-  width: 477.93px;
-  height: 453.057px;
-  /* transform: rotate(156.39deg); */
-  flex-shrink: 0;
+ 
 }
 .right-circle svg {
-  width: 457.092px;
-  height: 415.608px;
-  transform: rotate(-12.107deg);
-  flex-shrink: 0;
-  position: absolute;
-  left: 180px;
-  top: 40px;
+  
 }
 .discription-text {
-  width: 396px;
-  padding: 20px;
-  gap: 2px;
+
 }
 .discription-text h1 {
-  width: 396px;
-  height: 73px;
-  flex-shrink: 0;
-  color: #000;
-  font-family: "Poppins";
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  
 }
 .discription-text span {
-  color: black;
-  font-family: "Roboto";
+ 
 }
 @media screen and (max-width: 1220px) {
   .left-circle svg {
-    width: 377.93px;
-    height: 353.057px;
-    /* transform: rotate(156.39deg); */
-    flex-shrink: 0;
+  
   }
   .right-circle svg {
-    width: 357.092px;
-    height: 315.608px;
+   
   }
   .discription-logo img {
-    width: 550px;
+   
   }
 }
 @media screen and (max-width: 1130px) {
   .discription-cointainer {
-    flex-direction: column;
-    gap: 70px;
-    align-items: center;
-    justify-content: center;
+   
   }
 }
 @media screen and (max-width: 790px) {
   .left-circle svg {
-    width: 277.93px;
-    height: 253.057px;
+   
   }
   .right-circle svg {
-    width: 257.092px;
-    height: 215.608px;
+   
   }
   .discription-logo img {
-    width: 450px;
+ 
   }
   .right-circle svg {
-    left: 120px;
-    top: 40px;
+   
   }
 }
 @media screen and (max-width: 790px) {
   .left-circle svg {
-    width: 200.93px;
-    height: 193.057px;
+ 
   }
   .right-circle svg {
-    width: 200.092px;
-    height: 160.608px;
+    
   }
   .discription-logo img {
-    width: 300px;
+   
   }
   .right-circle svg {
-    left: 100px;
-    top: 00px;
+   
   }
 }
 @media screen and (max-width: 420px) {
   .discription-logo {
-    margin-right: 100px;
+    
   }
   .discription-text {
-    width: 396px;
-    padding: 20px;
-    gap: 2px;
+
   }
   .discription-text h1 {
-    width: 396px;
-    height: 73px;
-    flex-shrink: 0;
-    color: #000;
-    font-family: "Poppins";
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    
   }
   .discription-text span {
-    color: black;
-    font-family: "Roboto";
+   
   }
   .discription-text {
-    margin-left: 20px;
+   
   }
   .discription-text h1 {
-    font-size: 46px;
+    
   }
   .discription-text span {
-    font-size: 12px;
+ 
   }
 }

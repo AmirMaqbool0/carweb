@@ -1,314 +1,144 @@
 .history-car-card-container {
-  width: 568px;
-  height: 195px;
-  background: #fff;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+
 }
 .history-car-card-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+
 }
 .history-card-name {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+
 }
 .history-card-name h1 {
-  color: var(--Secondary-500, #1a202c);
-  font-family: "Plus Jakarta Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%; /* 21px */
-  letter-spacing: -0.28px;
+
 }
 .history-card-name span {
-  color: var(--Secondary-300, var(--gray, #90a3bf));
 
-  /* Medium/Type@12 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.24px;
 }
 .history-card-btn {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+ 
 }
 .history-card-btn span {
-  color: #ff1c00;
-  font-family: Inter;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  cursor: pointer;
+ 
 }
 .history-card-btn button {
-  display: flex;
-  width: 84px;
-  height: 29px;
-  padding: 0px 3px;
-  justify-content: center;
-  align-items: center;
-  gap: -1px;
-  border-radius: 4px;
-  background: #2cb67d;
-  border: none;
-  cursor: pointer;
+
 }
 .history-card-row2 {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+ 
 }
 .history-card-logo {
-  width: 169px;
-  height: 79px;
-  overflow: hidden;
+
 }
 .history-card-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
 }
 .car-history-pickup-drop {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+
 }
 .car-history-pickup {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+ 
 }
 .car-history-pickup h1 {
-  color: #252525;
-  font-family: "Satoshi";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  
 }
 .car-history-pickup span {
-  color: var(--gray, #90a3bf);
-  font-family: "Satoshi";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  
 }
 .car-history-drop {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  
 }
 .car-history-drop h1 {
-  color: #252525;
-  font-family: "Satoshi";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  
 }
 .car-history-drop span {
-  color: var(--gray, #90a3bf);
-  font-family: "Satoshi";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+
 }
 .car-history-day {
-  margin-top: 30px;
+  
 }
 .car-history-day span {
-  color: var(--Black, #333);
-  font-family: "Satoshi";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+
 }
 .row-3 {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+
 }
 .history-card-specification {
-  display: flex;
-  gap: 10px;
+
 }
 .history-card-specification-box {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+  
 }
 .history-card-specification-box span {
-  color: var(--Secondary-300, var(--gray, #90a3bf));
-
-  /* Medium/Type@12 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.24px;
+  
 }
 .history-card-price {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
+
 }
 .history-card-price-heading span {
-  color: var(--gray, #90a3bf);
-  font-family: "Plus Jakarta Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.14px;
+
 }
 .history-card-price-value {
-  display: flex;
+
 }
 .history-card-price-value h1 {
-  color: var(--Secondary-500, #1a202c);
-  text-align: right;
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.16px;
+ 
 }
 .history-card-price-value span {
-  color: var(--Secondary-300, #90a3bf);
-  font-family: "Plus Jakarta Sans";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.12px;
+
 }
 @media screen and (max-width: 620px) {
   .history-car-card-container {
-    width: 468px;
+   
   }
 }
 @media screen and (max-width: 520px) {
   .history-car-card-container {
-    width: 348px;
+    
   }
   .history-card-specification-box {
-    display: flex;
-    gap: 3px;
+   
   }
   .car-history-drop h1 {
-    font-size: 12px;
+    
   }
   .car-history-pickup h1 {
     font-size: 12px;
   }
 }
 .pop-up-container{
-  width: 100%;
-  background: rgb(107, 106, 106,0.6);
-  position: absolute;
-  inset: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
 }
 .pop-up-box{
-  width: 390px;
-height: 436px;
-border-radius: 15px;
-background: #FFF;
-display: flex;
-flex-direction: column;
-gap: 20px;
-padding: 20px;
-align-items: center;
-justify-content: center;
+
 }
 .pop-up-box-heading{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  
 }
 .pop-up-box-heading h1{
-  color: #0F0B03;
-  text-align: center;
-  font-family: 'Satoshi';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+ 
 }
 .pop-up-box-heading span{
-  color: var(--Gray, #8B8989);
-  text-align: center;
-  font-family: 'Satoshi';
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 185%; /* 25.9px */
+  /* 25.9px */
 }
 .pop-up-box-rating{
-  display: flex;
-  gap: 10px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
+  
 }
 .pop-up-box-message{
-  width: 352px;
-height: 128px;
-flex-shrink: 0;
-border-radius: 10px;
-border: 2px solid #E0E4F5;
-background: #FFF;
-position: relative;
+ 
 }
 .pop-up-box-message input {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  inset: 0;
+
 }
 .pop-up-btn button{
-  width: 350px;
-height: 55px;
-flex-shrink: 0;
-background: #3563E9;
-cursor: pointer;
-color: #FFF;
-text-align: center;
-font-family: 'Satoshi';
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-border: none;
+
 }
 @media screen and (max-width:450px) {
  .pop-up-box{
-  width: 90%;
+  
  } 
  .pop-up-box-message{
-  width: 100%;
+  
  }
  .pop-up-btn button{
-  width: 300px;
+  
  }
 }

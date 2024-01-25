@@ -1,44 +1,45 @@
 import React, { useState } from "react";
-import "./style.css";
+// import "./style.css";
 import LoginLogo from "../../Assests/logo.png";
 import Google from "../../Assests/google.png";
 import Apple from "../../Assests/apple.png";
 import Facebook from "../../Assests/facebook.svg";
 import { NavLink } from "react-router-dom";
+import { LogInContainer,Left,Right,LoginBox,LoginBoxText,LoginBoxInputBox,LoginBoxInputs, ForgetPassword,ForgetPasswordCheckBox,ForgetPasswordLink,LoginPageLoginBtn, OtherLoginOption, AskSignUp, Or, OtherOptionBox, OtherOptionBoxLogo} from "./style.js";
 const Login = () => {
   const [show, setShow] = useState(false);
   return (
-    <div className="login-container">
-      <div className="left">
+    <LogInContainer>
+      <Left>
         <img src={LoginLogo} alt="" />
-      </div>
-      <div className="right">
-        <div className="login-box">
+      </Left>
+      <Right>
+        <LoginBox>
           <div className="login-box-logo">
             <img src={LoginLogo} alt="" />
           </div>
-          <div className="login-box-text">
+          <LoginBoxText>
             <h1>Login to your Account</h1>
             <span>Welcome back! please enter your detail</span>
-          </div>
-          <div className="login-box-inputs">
-            <div className="login-box-input-box">
+          </LoginBoxText>
+          <LoginBoxInputs>
+            <LoginBoxInputBox>
               <span>Email</span>
               <input type="text" placeholder="Emai" />
-            </div>
-            <div className="login-box-input-box">
+            </LoginBoxInputBox>
+            <LoginBoxInputBox>
               <span>Password</span>
               <input
                 type={show == true ? "text" : "password"}
                 placeholder="Password"
               />
-            </div>
-            <div className="forget-password">
-              <div className="forget-password-check-box">
+            </LoginBoxInputBox>
+            <ForgetPassword>
+              <ForgetPasswordCheckBox>
                 <input type="checkbox" name="" id="" />
                 <span>Remember me</span>
-              </div>
-              <div className="forget-password-link">
+              </ForgetPasswordCheckBox>
+              <ForgetPasswordLink>
                 <NavLink
                   to={"/forgetpassword"}
                   style={{ textDecoration: "none" }}
@@ -46,55 +47,55 @@ const Login = () => {
                   {" "}
                   <span>Forgot Password?</span>
                 </NavLink>
-              </div>
-            </div>
-            <div className="login-page-login-btn">
+              </ForgetPasswordLink>
+            </ForgetPassword>
+            <LoginPageLoginBtn>
               <NavLink to={"/"} style={{ textDecoration: "none" }}>
                 {" "}
                 <button>Login</button>
               </NavLink>
-            </div>
-          </div>
-          <div className="other-login-option">
-            <div className="ask-signup">
+            </LoginPageLoginBtn>
+          </LoginBoxInputs>
+          <OtherLoginOption>
+            <AskSignUp>
               <span>Dont have an account?</span>
               <NavLink to={"/signin"} style={{ textDecoration: "none" }}>
                 <a href="$"> Sign Up</a>
               </NavLink>
-            </div>
-            <div className="or">
+            </AskSignUp>
+            <Or>
               <span>Or</span>
-            </div>
-            <div className="other-option">
-              <div className="other-option-box">
-                <div className="other-option-box-logo">
+            </Or>
+            <OtherLoginOption>
+              <OtherOptionBox>
+                <OtherOptionBoxLogo>
                   <img src={Google} alt="" />
-                </div>
+                </OtherOptionBoxLogo>
                 <div className="other-option-box-text">
                   <span>Sign in with Google</span>
                 </div>
-              </div>
-              <div className="other-option-box">
-                <div className="other-option-box-logo">
+              </OtherOptionBox>
+              <OtherOptionBox>
+                <OtherOptionBoxLogo>
                   <img src={Facebook} alt="" />
-                </div>
+                </OtherOptionBoxLogo>
                 <div className="other-option-box-text">
                   <span>Sign in with Facebook</span>
                 </div>
-              </div>
-              <div className="other-option-box">
-                <div className="other-option-box-logo">
+              </OtherOptionBox>
+              <OtherOptionBox>
+                <OtherOptionBoxLogo>
                   <img src={Apple} alt="" />
-                </div>
+                </OtherOptionBoxLogo>
                 <div className="other-option-box-text">
                   <span>Sign in with Apple</span>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+              </OtherOptionBox>
+            </OtherLoginOption>
+          </OtherLoginOption>
+        </LoginBox>
+      </Right>
+    </LogInContainer>
   );
 };
 

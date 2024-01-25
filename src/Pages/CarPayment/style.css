@@ -1,463 +1,193 @@
 .crapayment-container {
-  width: 100%;
-  height: fit-content;
-  padding: 30px;
-  background: #f6f7f9;
-  display: flex;
-  justify-content: space-between;
+ 
 }
 .car-payment-left {
-  width: 67%;
-  height: fit-content;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+ 
 }
 .car-payment-right {
-  width: 30%;
-  height: 464px;
-  background: white;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+
 }
 .payment-card-upper {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+ 
 }
 .payment-card-heading span {
-  color: var(--Secondary-500, #1a202c);
 
-  /* Bold/Type@20 */
-  font-family: Plus Jakarta Sans;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 30px */
-  letter-spacing: -0.6px;
 }
 .payment-card-text span {
-  color: var(--Secondary-300, var(--gray, #90a3bf));
-
-  /* Medium/Type@14 */
-  font-family: Plus Jakarta Sans;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 21px */
-  letter-spacing: -0.28px;
+ 
 }
 .carpayment-logo-name {
-  display: flex;
-  gap: 10px;
+  
 }
 .carpayment-logo {
-  width: 132px;
-  height: 108px;
-  border-radius: 10px;
+ 
 }
 .carpayment-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+ 
 }
 .carpayment-name-rating {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+ 
 }
 .car-payment-name span {
-  color: var(--Secondary-500, #1a202c);
-
-  /* Bold/Type@32 */
-  font-family: Plus Jakarta Sans;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 48px */
-  letter-spacing: -0.96px;
+  
 }
 .carpayment-rating {
-  display: flex;
-  gap: 5px;
+  
 }
 .carpayment-rating span {
-  color: var(--Secondary-400, #596780);
 
-  /* Medium/Type@14 */
-  font-family: Plus Jakarta Sans;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 21px */
-  letter-spacing: -0.28px;
 }
 .payment-card-price {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  
 }
 .payment-price-box {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+ 
 }
 .payment-price-box h2 {
-  color: var(--Secondary-300, var(--gray, #90a3bf));
-
-  /* Medium/Type@16 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 24px */
-  letter-spacing: -0.32px;
+ 
 }
 .payment-price-box span {
-  color: var(--Secondary-500, #1a202c);
-  text-align: right;
-
-  /* Semibold/Type@16 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%; /* 24px */
-  letter-spacing: -0.32px;
+ 
 }
 .payment-total-price {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+
 }
 .payment-total-text {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+
 }
 .payment-total-text h1 {
-  color: var(--Secondary-500, #1a202c);
 
-  /* Bold/Type@20 */
-  font-family: " Plus Jakarta Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 30px */
-  letter-spacing: -0.6px;
 }
 .payment-total-text h3 {
-  color: var(--Secondary-300, var(--gray, #90a3bf));
 
-  /* Medium/Type@14 */
-  font-family: Plus Jakarta Sans;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 21px */
-  letter-spacing: -0.28px;
 }
 .payment-total-price span {
-  color: var(--Secondary-500, #1a202c);
-  text-align: right;
-  font-family: "Plus Jakarta Sans";
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+
 }
 .billing-info {
-  width: 100%;
-  background: white;
-  height: fit-content;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+
 }
 .info-upper {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+ 
 }
 .info-heading h1 {
-  color: var(--Secondary-500, #1a202c);
-
-  /* Bold/Type@20 */
-  font-family: Plus Jakarta Sans;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 30px */
-  letter-spacing: -0.6px;
+ 
 }
 .info-heading {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+
 }
 .heading span {
-  color: var(--Secondary-300, var(--gray, #90a3bf));
-
-  /* Medium/Type@14 */
-  font-family: Plus Jakarta Sans;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 21px */
-  letter-spacing: -0.28px;
+ 
 }
 .info-date {
-  color: var(--Secondary-300, var(--gray, #90a3bf));
-  text-align: right;
 
-  /* Medium/Type@14 */
-  font-family: Plus Jakarta Sans;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 21px */
-  letter-spacing: -0.28px;
 }
 .payment-inputs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+ 
 }
 .payment-input-box {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+
 }
 .payment-input-box span {
-  color: var(--Secondary-500, #1a202c);
-
-  /* Semibold/Type@16 */
-  font-family: Plus Jakarta Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%; /* 24px */
-  letter-spacing: -0.32px;
+  
 }
 .payment-input-box input {
-  width: 316px;
-  height: 56px;
-  border-radius: 10px;
-  background: #f6f7f9;
-  border: none;
-  padding: 10px;
+
 }
 .rentel-info {
-  width: 100%;
-  height: fit-content;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 30px;
+  
 }
 .pick-up-heading {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+  
 }
 .pick-up-heading span {
-  color: var(--Secondary-500, #1a202c);
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: -0.32px;
+ 
 }
 .payment-drop-down {
-  width: 316px;
-  height: 56px;
-  border-radius: 10px;
-  background: #f6f7f9;
-  display: flex;
-  align-items: center;
-  padding: 10px;
+
 }
-.p-dropdown-items {
-  background: white;
-}
+
 .payment-method {
-  width: 100%;
-  height: fit-content;
-  border-radius: 10px;
-  background: var(--Primary-0, #fff);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
+  
 }
 .payment-method-box {
-  width: 100%;
-  height: fit-content;
-  border-radius: 10px;
-  background: #f6f7f9;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
+  
 }
 .payment-method-header {
-  display: flex;
-  justify-content: space-between;
+
 }
 .credit-logo {
-  display: flex;
-  gap: 5px;
+ 
 }
 .credit-logo img {
-  width: 48px;
-  height: 16px;
-  object-fit: cover;
+  
 }
 .payment-option {
-  width: 100%;
-  height: 56px;
-  border-radius: 10px;
-  background: #f6f7f9;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
+  
 }
 .payment-option-name {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+
 }
 .payment-option-name span {
-  color: var(--Secondary-500, #1a202c);
 
-  /* Semibold/Type@16 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%; /* 24px */
-  letter-spacing: -0.32px;
 }
 .payment-option-logo {
-  width: 100px;
-  height: 24px;
+
 }
 .payment-option-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+ 
 }
 .confirmation-box {
-  width: 100%;
-  height: 484px;
-  border-radius: 10px;
-  background: var(--Primary-0, #fff);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  
 }
 .policy-box {
-  width: 100%;
-  height: 56px;
-  border-radius: 10px;
-  background: #f6f7f9;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 10px;
+  
 }
 .policy-box span {
-  color: #1f2544;
-
-  /* Semibold/Type@16 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%; /* 24px */
-  letter-spacing: -0.32px;
+ 
 }
 .confirmation-btn button {
-  display: flex;
-  width: 140px;
-  height: 56px;
-  padding: 0px 20px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 10px;
-  background: var(--blue, #3563e9);
-  border: none;
-  cursor: pointer;
+  
 }
 .safty-msg {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  
 }
 .safty-msg h1 {
-  color: var(--Secondary-500, #1a202c);
-
-  /* Semibold/Type@16 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%; /* 24px */
-  letter-spacing: -0.32px;
+  
 }
 .safty-msg span {
-  color: var(--Secondary-300, var(--gray, #90a3bf));
 
-  /* Medium/Type@14 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 21px */
-  letter-spacing: -0.28px;
 }
 
 @media screen and (max-width: 1290px) {
   .car-payment-name span {
-    font-size: 20px;
+    
   }
   .carpayment-rating {
-    display: flex;
-    flex-direction: column;
+   
   }
 }
 @media screen and (max-width: 1090px) {
   .crapayment-container {
-    display: flex;
-    flex-direction: column-reverse;
+    
   }
   .car-payment-right {
     width: 100%;
   }
   .car-payment-left {
-    width: 100%;
+   
   }
 }
 @media screen and (max-width: 560px) {
   .crapayment-container {
-    padding: 0;
+  
   }
 }
 @media screen and (max-width: 450px) {
   .payment-input-box input {
-    width: 320px;
+   
   }
   .car-payment-left {
-    padding: 0;
+    
   }
 }

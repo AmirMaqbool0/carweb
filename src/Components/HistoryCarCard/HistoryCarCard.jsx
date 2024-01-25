@@ -1,92 +1,93 @@
 import React, { useState } from "react";
-import "./style.css";
+// import "./style.css";
 
 import CarHistory from "../../Assests/carcard.png";
 import { Radar, Fuel, UserRound, Star } from "lucide-react";
+import { CarHistoryDay, CarHistoryDrop, CarHistoryPickUp, CarHistoryPickUpDrop, HistoryCarCardContainer, HistoryCarCardHeader, HistoryCardBtn, HistoryCardLogo, HistoryCardName, HistoryCardPrice, HistoryCardPriceHeading, HistoryCardPriceValue, HistoryCardRow2, HistoryCardSpecification, HistoryCardSpecificationBox, PopUpBox, PopUpBoxBtn, PopUpBoxHeading, PopUpBoxMessage, PopUpBoxRating, PopUpContainer, Row3 } from "./style.js";
 const HistoryCarCard = () => {
   const [popUp, setPopUp] = useState(false);
   const showpopup = () => {
     setPopUp(!popUp);
   };
   return (
-    <div className="history-car-card-container">
-      <div className="history-car-card-header">
-        <div className="history-card-name">
+    <HistoryCarCardContainer>
+      <HistoryCarCardHeader>
+        <HistoryCardName>
           <h1>Nissan GT - R</h1>
           <span>sport</span>
-        </div>
-        <div className="history-card-btn">
+        </HistoryCardName>
+        <HistoryCardBtn>
           <span>Cencel</span>
           <button onClick={showpopup}>Return</button>
-        </div>
-      </div>
-      <div className="history-card-row2">
-        <div className="history-card-logo">
+        </HistoryCardBtn>
+      </HistoryCarCardHeader>
+      <HistoryCardRow2>
+        <HistoryCardLogo>
           <img src={CarHistory} alt="" />
-        </div>
-        <div className="car-history-pickup-drop">
-          <div className="car-history-pickup">
+        </HistoryCardLogo>
+        <CarHistoryPickUpDrop>
+          <CarHistoryPickUp>
             <h1>London Bridge</h1>
             <span>Pickup point</span>
-          </div>
-          <div className="car-history-drop">
+          </CarHistoryPickUp>
+          <CarHistoryDrop>
             <h1>London Bridge</h1>
             <span>Pickup point</span>
-          </div>
-        </div>
-        <div className="car-history-day">
+          </CarHistoryDrop>
+        </CarHistoryPickUpDrop>
+        <CarHistoryDay>
           <span>4 days</span>
-        </div>
-      </div>
-      <div className="row-3">
-        <div className="history-card-specification">
-          <div className="history-card-specification-box">
+        </CarHistoryDay>
+      </HistoryCardRow2>
+      <Row3>
+        <HistoryCardSpecification>
+          <HistoryCardSpecificationBox>
             <Fuel />
             <span>80L</span>
-          </div>
-          <div className="history-card-specification-box">
+          </HistoryCardSpecificationBox>
+          <HistoryCardSpecificationBox>
             <Radar />
             <span>Manual</span>
-          </div>
-          <div className="history-card-specification-box">
+          </HistoryCardSpecificationBox>
+          <HistoryCardSpecificationBox>
             <UserRound />
             <span>2 People</span>
-          </div>
-        </div>
-        <div className="history-card-price">
-          <div className="history-card-price-heading">
+          </HistoryCardSpecificationBox>
+        </HistoryCardSpecification>
+        <HistoryCardPrice>
+          <HistoryCardPriceHeading>
             <span>Price</span>
-          </div>
-          <div className="history-card-price-value">
+          </HistoryCardPriceHeading>
+          <HistoryCardPriceValue>
             <h1>$99.00</h1>
             <span>/day</span>
-          </div>
-        </div>
-      </div>
+          </HistoryCardPriceValue>
+        </HistoryCardPrice>
+      </Row3>
       {popUp && (
-        <div className="pop-up-container">
-          <div className="pop-up-box">
-            <div className="pop-up-box-heading">
+        <PopUpContainer>
+          <PopUpBox>
+            <PopUpBoxHeading>
               <h1>Thank you!</h1>
               <span>Please rate your trip</span>
-            </div>
-            <div className="pop-up-box-rating">
+            </PopUpBoxHeading>
+            <PopUpBoxRating>
               {Array(5)
                 .fill()
                 .map((item, i) => (
                   <Star fill="yellow" />
                 ))}
-            </div>
-            <div className="pop-up-box-message">
+            </PopUpBoxRating>
+            <PopUpBoxMessage>
               <input type="text" placeholder="Message" />
-            </div>
-            <div className="pop-up-btn">
+            </PopUpBoxMessage>
+            <PopUpBoxBtn>
               <button onClick={showpopup}>Send</button>
-            </div>
-          </div>
-        </div>
+            </PopUpBoxBtn>
+          </PopUpBox>
+        </PopUpContainer>
       )}
-    </div>
+    </HistoryCarCardContainer>
   );
 };
 

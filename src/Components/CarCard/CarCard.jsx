@@ -1,52 +1,53 @@
 import React from "react";
-import "./style.css";
+// import "./style.css";
 import { Fuel, Heart, Aperture, UsersRound } from "lucide-react";
-import CarCardlogo from "../../Assests/carcard.png";
+import CarCardlogopic from "../../Assests/carcard.png";
 import { NavLink } from "react-router-dom";
+import { CarCardContainer, CarCardLogo, CarCardPrice, CarLikebtn, CarName, CarSpecification, CarSpecificationBox, CardTop, RentBtn, RentPrice } from "./style.js";
 
 const CarCard = () => {
   return (
-    <div className="car-card-cointainer">
-      <div className="card-top">
-        <div className="car-name">
+    <CarCardContainer>
+      <CardTop>
+        <CarName>
           <h3>Swift</h3>
           <span>Sport</span>
-        </div>
-        <div className="car-like-btn">
+        </CarName>
+        <CarLikebtn>
           <Heart />
-        </div>
-      </div>
-      <div className="car-card-logo">
-        <img src={CarCardlogo} alt="" />
-      </div>
-      <div className="car-specification">
-        <div className="car-specification-box">
+        </CarLikebtn>
+      </CardTop>
+      <CarCardLogo>
+        <img src={CarCardlogopic} alt="" />
+      </CarCardLogo>
+      <CarSpecification>
+        <CarSpecificationBox>
           <Fuel color=" #90A3BF" />
           <span>90L</span>
-        </div>
-        <div className="car-specification-box">
+        </CarSpecificationBox>
+        <CarSpecificationBox>
           <Aperture color=" #90A3BF" />
           <span>Manual</span>
-        </div>
-        <div className="car-specification-box">
+        </CarSpecificationBox>
+        <CarSpecificationBox>
           <UsersRound color=" #90A3BF" />
           <span>4 People</span>
-        </div>
-      </div>
-      <div className="carcard-price">
-        <div className="rent-price">
+        </CarSpecificationBox>
+      </CarSpecification>
+      <CarCardPrice>
+        <RentPrice>
           <span style={{ color: "black" }}>Pkr.</span>
           <h3>3000/</h3>
           <span>Day</span>
-        </div>
-        <div className="rent-btn">
+        </RentPrice>
+        <RentBtn>
           <NavLink to={"/cardetail"} style={{ textDecoration: "none" }}>
             {" "}
             <button>Rent Now</button>
           </NavLink>
-        </div>
-      </div>
-    </div>
+        </RentBtn>
+      </CarCardPrice>
+    </CarCardContainer>
   );
 };
 

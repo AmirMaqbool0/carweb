@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./style.css";
+// import "./style.css";
 import NewLogo from "../../Assests/logo.png";
 import { Eye, EyeOff } from "lucide-react";
 import { NavLink } from "react-router-dom";
-
+import { NewPasswordContainer,NewPasswordBox,NewPasswordLeft,NewPasswordRight,NewPasswordText,NewPasswordBtn,NewPasswordInput,NewPasswordInputs } from "./style.js";
 const NewPassword = () => {
   const [show, setShow] = useState(false);
   const [newPassword, setNewPassword] = useState();
@@ -12,24 +12,24 @@ const NewPassword = () => {
     setShow(!show);
   };
   return (
-    <div className="newpassword-container">
-      <div className="newpassword-box">
-        <div className="newpassword-left">
+    <NewPasswordContainer>
+      <NewPasswordBox>
+        <NewPasswordLeft>
           <img src={NewLogo} alt="" />
-        </div>
+        </NewPasswordLeft>
 
-        <div className="nepassword-right">
+        <NewPasswordRight>
           <div className="newpassword-logo">
             <img src={NewLogo} alt="" />
           </div>
-          <div className="newpassword-text">
+          <NewPasswordText>
             <h1>Create New Password</h1>
             <span>Please Enter your Password and Confirm Password</span>
-          </div>
-          <div className="newpassword-inputs">
+          </NewPasswordText>
+          <NewPasswordInputs>
             <div>
               <span>Password</span>
-              <div className="newpassword-input">
+              <NewPasswordInput>
                 <input
                   type={show == true ? "text" : "password"}
                   placeholder="Enter your password"
@@ -40,11 +40,12 @@ const NewPassword = () => {
                 ) : (
                   <EyeOff onClick={changebtn} />
                 )}
+                 </NewPasswordInput>
               </div>
-            </div>
+           
             <div>
               <span>Confirm Password</span>
-              <div className="newpassword-input">
+              <NewPasswordInput>
                 <input
                   type={show == true ? "text" : "password"}
                   placeholder="Enter your confirm password"
@@ -55,17 +56,17 @@ const NewPassword = () => {
                 ) : (
                   <EyeOff onClick={changebtn} />
                 )}
-              </div>
+              </NewPasswordInput>
             </div>
-            <div className="newpassword-btn">
+            <NewPasswordBtn>
               <NavLink to={"/"} style={{ textDecoration: "none" }}>
                 <button>Continue</button>
               </NavLink>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </NewPasswordBtn>
+          </NewPasswordInputs>
+        </NewPasswordRight>
+      </NewPasswordBox>
+    </NewPasswordContainer>
   );
 };
 

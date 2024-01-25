@@ -1,16 +1,18 @@
 import React from "react";
-import "./style.css";
+// import "./style.css";
+import { HomeBannerContainer, HomeBannerText,HomeBannerPage } from "./style.js";
+import HomeBannerPic from '../../Assests/HomeBanner.png'
 const HomeBanner = () => {
   return (
-    <div className="home-banner-container">
-      <div className="home-banner">
-        <div className="home-banner-text">
+    <HomeBannerContainer>
+      <HomeBannerPage picurl={HomeBannerPic}>
+        <HomeBannerText>
           <h1>safer ,faster and comfortable</h1>
           <span>Get in touch with our luxury cars</span>
           <button>Rent Now</button>
-        </div>
-      </div>
-    </div>
+        </HomeBannerText>
+      </HomeBannerPage>
+    </HomeBannerContainer>
   );
 };
 

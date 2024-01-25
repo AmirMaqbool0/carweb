@@ -1,47 +1,48 @@
 import React from "react";
-import ForgerotpLogo from "../../Assests/logo.png";
+import ForgerotpLogoPic from "../../Assests/logo.png";
 import Countdown from "react-countdown";
 import "./style.css";
 import { NavLink } from "react-router-dom";
+import { ForgetOtpBox, ForgetOtpBtn, ForgetOtpContainer, ForgetOtpInput, ForgetOtpInputs, ForgetOtpLeft, ForgetOtpRight, ForgetOtpText, Timer } from "./style.js";
 const SignOTP = () => {
   return (
-    <div className="forget-otp-container">
-      <div className="forget-otp-box">
-        <div className="forget-otp-left">
-          <img src={ForgerotpLogo} alt="" />
-        </div>
-        <div className="forgget-otp-right">
-          <div className="forget-otp-logo">
-            <img src={ForgerotpLogo} alt="" />
-          </div>
-          <div className="forget-otp-text">
+    <ForgetOtpContainer>
+      <ForgetOtpBox>
+        <ForgetOtpLeft>
+          <img src={ForgerotpLogoPic} alt="" />
+        </ForgetOtpLeft>
+        <ForgetOtpRight>
+          <div className="forgegt-otp-logo">
+            <img src={ForgerotpLogoPic} alt="" />
+            </div>
+          <ForgetOtpText>
             <h1>OTP Verification</h1>
             <span>
               Please enter the OTP code we have send to your Registered email
             </span>
-          </div>
-          <div className="forget-otp-input">
-            <div className="forget-otp-inputs">
+          </ForgetOtpText>
+          <ForgetOtpInput>
+            <ForgetOtpInputs>
               <input type="text" maxLength={1} />
               <input type="text" maxLength={1} />
               <input type="text" maxLength={1} />
               <input type="text" maxLength={1} />
               <input type="text" maxLength={1} />
               <input type="text" maxLength={1} />
-            </div>
-            <div className="timer">
+            </ForgetOtpInputs>
+            <Timer>
               <Countdown date={Date.now() + 60000} daysInHours="false" />
-            </div>
-            <div className="forget-otp-btn">
+            </Timer>
+            <ForgetOtpBtn>
               <NavLink to={"/"} style={{ textDecoration: "none" }}>
                 {" "}
                 <button>Confirm</button>{" "}
               </NavLink>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </ForgetOtpBtn>
+          </ForgetOtpInput>
+        </ForgetOtpRight>
+      </ForgetOtpBox>
+    </ForgetOtpContainer>
   );
 };
 

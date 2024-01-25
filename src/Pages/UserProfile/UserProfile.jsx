@@ -2,94 +2,95 @@ import React from "react";
 import "./style.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
-import UserProfilLogo from "../../Assests/google.png";
+import UserProfilLogoPic from "../../Assests/google.png";
+import { UserLisenceBox, UserProfileBox, UserProfileBoxs, UserProfileBtn, UserProfileContaine, UserProfileGender, UserProfileGenderBox, UserProfileInputBox, UserProfileInputs, UserProfileLogoBtn,UserProfileLogo, UserLisenceHeading, UserLisenceHeadingBox, UserLisenceBoxHeading, UserLisenceTextBox, UserLisencebtn } from "./style.js";
 const UserProfile = () => {
   return (
     <div>
       <Navbar />
-      <div className="user-profile-container">
-        <div className="user-profile-box">
-          <div className="user-profile-logo-btn">
-            <div className="user-profile-logo">
-              <img src={UserProfilLogo} alt="" />
-            </div>
-            <div className="user-profile-btn">
+      <UserProfileContaine>
+        <UserProfileBox>
+          <UserProfileLogoBtn>
+            <UserProfileLogo>
+              <img src={UserProfilLogoPic} alt="" />
+            </UserProfileLogo>
+            <UserProfileBtn>
               <button>Upload Picture</button>
-            </div>
-          </div>
-          <div className="user-profile-inputs">
-            <div className="user-profile-input-box">
+            </UserProfileBtn>
+          </UserProfileLogoBtn>
+          <UserProfileInputs>
+            <UserProfileInputBox>
               <span>Full Name</span>
               <input type="text" />
-            </div>
-            <div className="user-profile-input-box">
+            </UserProfileInputBox>
+            <UserProfileInputBox>
               <span>Email</span>
               <input type="text" />
-            </div>
-            <div className="user-profile-input-box">
+            </UserProfileInputBox>
+            <UserProfileInputBox>
               <span>Phone</span>
               <input type="text" />
-            </div>
-            <div className="user-profile-input-box">
+            </UserProfileInputBox>
+            <UserProfileInputBox>
               <span>Post Code</span>
               <input type="text" />
-            </div>
-            <div className="user-profile-input-box">
+            </UserProfileInputBox>
+            <UserProfileInputBox>
               <span>Address</span>
               <input type="text" />
-            </div>
-            <div className="user-profile-input-box">
+            </UserProfileInputBox>
+            <UserProfileInputBox>
               <span>Gender</span>
-              <div className="user-profile-gender">
-                <div className="user-profile-gender-box">
+              <UserProfileGender>
+                <UserProfileGenderBox>
                   <span>Male</span>
                   <input type="radio" name="" id="" />
-                </div>
-                <div className="user-profile-gender-box">
+                </UserProfileGenderBox>
+                <UserProfileGenderBox>
                   <span>Female</span>
                   <input type="radio" name="" id="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="user-licence-boxs">
-          <div className="user-licence-heading">
+                </UserProfileGenderBox>
+              </UserProfileGender>
+            </UserProfileInputBox>
+          </UserProfileInputs>
+        </UserProfileBox>
+        <UserProfileBoxs>
+          <UserLisenceHeading>
             <span>Driving Licence</span>
-            <div className="user-licence-heading-box"></div>
-          </div>
-          <div className="user-licence-box">
-            <div className="user-licence-box-heading">
+            <UserLisenceHeadingBox></UserLisenceHeadingBox>
+          </UserLisenceHeading>
+          <UserLisenceBox>
+            <UserLisenceBoxHeading>
               <span>Car Licence Back Image</span>
-            </div>
+            </UserLisenceBoxHeading>
 
-            <div className="user-licence-text-box">
+            <UserLisenceTextBox>
               <span>
                 Upload your licence back image, Supported Formats: JPG, PNG,;
                 Max File Size:5MB.
               </span>
-            </div>
-            <div className="user-licence-btn">
+            </UserLisenceTextBox>
+            <UserLisencebtn>
               <button>Upload Picture</button>
-            </div>
-          </div>
-          <div className="user-licence-box">
-            <div className="user-licence-box-heading">
+            </UserLisencebtn>
+          </UserLisenceBox>
+          <UserLisenceBox>
+            <UserLisenceBoxHeading>
               <span>Car Licence Back Image</span>
-            </div>
+            </UserLisenceBoxHeading>
 
-            <div className="user-licence-text-box">
+            <UserLisenceTextBox>
               <span>
                 Upload your licence back image, Supported Formats: JPG, PNG,;
                 Max File Size:5MB.
               </span>
-            </div>
-            <div className="user-licence-btn">
+            </UserLisenceTextBox>
+            <UserLisencebtn>
               <button>Upload Picture</button>
-            </div>
-          </div>
-        </div>
-      </div>
+            </UserLisencebtn>
+          </UserLisenceBox>
+        </UserProfileBoxs>
+      </UserProfileContaine>
       <Footer />
     </div>
   );

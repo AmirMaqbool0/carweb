@@ -1,27 +1,27 @@
 import React from "react";
-import "./style.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import HistoryCarCard from "../../Components/HistoryCarCard/HistoryCarCard";
+import {CarHistoryContainer,CarHistoryBox,CarHistoryHeading,HisoryCarCardSection} from './style.js'
 const CarHistory = () => {
   return (
-    <div className="car-history-container">
+    <CarHistoryContainer>
       <Navbar />
-      <div className="car-history-box">
-        <div className="car-history-heading">
+      <CarHistoryBox>
+        <CarHistoryHeading>
           <h1>History</h1>
           <span>Here you can see the history of rent cars that you used</span>
-        </div>
-        <div className="history-car-card-section">
+        </CarHistoryHeading>
+        <HisoryCarCardSection>
           {Array(3)
             .fill()
             .map((item, i) => (
               <HistoryCarCard />
             ))}
-        </div>
-      </div>
+        </HisoryCarCardSection>
+      </CarHistoryBox>
       <Footer />
-    </div>
+    </CarHistoryContainer>
   );
 };
 

@@ -1,11 +1,12 @@
 import React from "react";
-import "./style.css";
+// import "./style.css";
 import Car from "../../Assests/discription.png";
+import { DiscriptionContainer,DiscriptionLogo,DiscriptionText,LeftCircle,RightCircle} from "./style.js";
 const Discription = () => {
   return (
-    <div className="discription-cointainer">
-      <div className="discription-logo">
-        <div className="left-circle">
+    <DiscriptionContainer>
+      <DiscriptionLogo>
+        <LeftCircle>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="494"
@@ -19,8 +20,8 @@ const Discription = () => {
               fill-opacity="0.56"
             />
           </svg>
-        </div>
-        <div className="right-circle">
+        </LeftCircle>
+        <RightCircle>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="472"
@@ -33,16 +34,16 @@ const Discription = () => {
               fill="#3563E9"
             />
           </svg>
-        </div>
+        </RightCircle>
         <img src={Car} alt="" />
-      </div>
-      <div className="discription-text">
+      </DiscriptionLogo>
+      <DiscriptionText>
         <h1>Rent a Car</h1>
         <span>
           We pride ourselves in always going the extra mile for our customers.
         </span>
-      </div>
-    </div>
+      </DiscriptionText>
+    </DiscriptionContainer>
   );
 };
 

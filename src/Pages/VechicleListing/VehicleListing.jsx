@@ -4,6 +4,7 @@ import "./style.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import CarCard from "../../Components/CarCard/CarCard";
 import Footer from "../../Components/Footer/Footer";
+import { Condition, ConditionBox, ConditionBoxes, ConditionHeading, DropDownBtn, Fule, FuleBox, FuleBoxes, FuleHeading, MinMaxRange, PriceRange, PriceRangeHeading, PriceRangeMeter, PriceRangeMeterBar, PriceRangeMeterText, Right, VehicleContainer, VehicleListBox, VehicleListBtn, VehicleListLeft } from "./style";
 const VehicleListing = () => {
   const [selectedCity, setSelectedCity] = useState(null);
   const cities = [
@@ -14,13 +15,13 @@ const VehicleListing = () => {
     { name: "Paris", code: "PRS" },
   ];
   return (
-    <div className="vehicle-container">
+    <VehicleContainer>
       <Navbar />
-      <div className="vehiclelist-box">
-        <div className="vehiclelist-left">
+      <VehicleListBox>
+        <VehicleListLeft>
           <div className="maker">
             <span>Make</span>
-            <div className="drop-down-box">
+            <DropDownBtn>
               <Dropdown
                 value={selectedCity}
                 onChange={(e) => setSelectedCity(e.value)}
@@ -29,11 +30,11 @@ const VehicleListing = () => {
                 placeholder="Select a City"
                 className="dropdown"
               />
-            </div>
+            </DropDownBtn>
           </div>
           <div className="model">
             <span>Model</span>
-            <div className="drop-down-box">
+            <DropDownBtn>
               <Dropdown
                 value={selectedCity}
                 onChange={(e) => setSelectedCity(e.value)}
@@ -42,31 +43,31 @@ const VehicleListing = () => {
                 placeholder="Select a City"
                 className="dropdown"
               />
-            </div>
+            </DropDownBtn>
           </div>
-          <div className="price-range">
-            <div className="price-range-heading">
+          <PriceRange>
+            <PriceRangeHeading>
               <h1>Price Range per Day (pkr)</h1>
               <span>50,000</span>
-            </div>
-            <div className="price-range-meter">
-              <div className="price-range-meter-text">
+            </PriceRangeHeading>
+            <PriceRangeMeter>
+              <PriceRangeMeterText>
                 <span>50,000</span>
                 <span>500M</span>
-              </div>
-              <div className="price-range-meter-bar">
+              </PriceRangeMeterText>
+              <PriceRangeMeterBar>
                 <span></span>
                 <h3></h3>
                 <span></span>
-              </div>
-              <div className="min-max-range">
+              </PriceRangeMeterBar>
+              <MinMaxRange>
                 <span>Minimum range 50,000 Rs</span>
                 <span>Maximium range 500M Rs</span>
-              </div>
-            </div>
+              </MinMaxRange>
+            </PriceRangeMeter>
             <div className="registration-city">
               <span>Registration City</span>
-              <div className="drop-down-box">
+              <DropDownBtn>
                 <Dropdown
                   value={selectedCity}
                   onChange={(e) => setSelectedCity(e.value)}
@@ -75,12 +76,12 @@ const VehicleListing = () => {
                   placeholder="Select a City"
                   className="dropdown"
                 />
-              </div>
+              </DropDownBtn>
             </div>
 
             <div className="car-documents">
               <span>Car Document</span>
-              <div className="drop-down-box">
+              <DropDownBtn>
                 <Dropdown
                   value={selectedCity}
                   onChange={(e) => setSelectedCity(e.value)}
@@ -89,62 +90,62 @@ const VehicleListing = () => {
                   placeholder="Select a City"
                   className="dropdown"
                 />
-              </div>
+              </DropDownBtn>
             </div>
 
-            <div className="condition">
-              <div className="condition-heading">
+            <Condition>
+              <ConditionHeading>
                 <span>Condition</span>
-              </div>
-              <div className="condition-boxes">
-                <div className="condition-box">
+              </ConditionHeading>
+              <ConditionBoxes>
+                <ConditionBox>
                   <span>New</span>
-                </div>
-                <div className="condition-box">
+                </ConditionBox>
+                <ConditionBox>
                   <span>Used</span>
-                </div>
-              </div>
-            </div>
-            <div className="fule">
-              <div className="fule-heading">
+                </ConditionBox>
+              </ConditionBoxes>
+            </Condition>
+            <Fule>
+              <FuleHeading>
                 <span>Fule</span>
-              </div>
-              <div className="fule-boxes">
-                <div className="fule-box">
+              </FuleHeading>
+              <FuleBoxes>
+                <FuleBox>
                   <span>Petrol</span>
-                </div>
-                <div className="fule-box">
+                </FuleBox>
+                <FuleBox>
                   <span>Diesel</span>
-                </div>
-                <div className="fule-box">
+                </FuleBox>
+                <FuleBox>
                   <span>LPG</span>
-                </div>
-                <div className="fule-box">
+                </FuleBox>
+                <FuleBox>
                   <span>CNG</span>
-                </div>
-                <div className="fule-box">
+                </FuleBox>
+                <FuleBox>
                   <span>Electric</span>
-                </div>
-                <div className="fule-box">
+                </FuleBox>
+                <FuleBox>
                   <span>Hybrid</span>
-                </div>
-              </div>
-            </div>
-            <div className="vehicle-list-btn">
+                </FuleBox>
+              </FuleBoxes>
+            </Fule>
+            <VehicleListBtn>
               <span>Apply</span>
-            </div>
-          </div>
-        </div>
-        <div className="vehiclelist-right">
+            </VehicleListBtn>
+          </PriceRange>
+        </VehicleListLeft>
+        <Right>
           {Array(9)
             .fill()
             .map((item, i) => (
               <CarCard />
             ))}
-        </div>
-      </div>
+        </Right>
+      </VehicleListBox>
       <Footer />
-    </div>
+    </VehicleContainer>
   );
 };
 

@@ -1,66 +1,67 @@
 import React from "react";
-import "./style.css";
+// import "./style.css";
 import FooterLogo from "../../Assests/logo.png";
+import { AboutLink, FooterBar, FooterBox, FooterContainer, FooterLeft, FooterLeftContent, FooterLeftLogo, FooterRight, FooterRights, ImportentLink, LinkHeading, Links } from "./style.js";
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <div className="footer-box">
-        <div className="footer-left">
-          <div className="footer-left-logo">
+    <FooterContainer>
+      <FooterBox>
+        <FooterLeft>
+          <FooterLeftLogo>
             <img src={FooterLogo} alt="" />
-          </div>
-          <div className="footer-left-content">
+          </FooterLeftLogo>
+          <FooterLeftContent>
             <span>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore,
               quod modi? Esse explicabo iste ipsum culpa commodi. Dicta, eaque
               repellendus.
             </span>
-          </div>
-        </div>
-        <div className="footer-right">
-          <div className="about-link">
-            <div className="link-heading">
+          </FooterLeftContent>
+        </FooterLeft>
+        <FooterRight>
+          <AboutLink>
+            <LinkHeading>
               <span>About</span>
-            </div>
-            <div className="links">
+            </LinkHeading>
+            <Links>
               <ul>
                 <li>Howitsworks</li>
                 <li>termsandcondition</li>
                 <li>privacypolicy</li>
                 <li>aboutus</li>
               </ul>
-            </div>
-          </div>
-          <div className="importent-link">
-            <div className="link-heading">
+            </Links>
+          </AboutLink>
+          <ImportentLink>
+            <LinkHeading>
               <span>Important Links</span>
-            </div>
-            <div className="links">
+            </LinkHeading>
+            <Links>
               <ul>
                 <li>VehicleList</li>
                 <li>Contact Us</li>
               </ul>
-            </div>
-          </div>
+            </Links>
+          </ImportentLink>
           <div className="Socials-link">
-            <div className="link-heading">
+            <LinkHeading>
               <span>Socials</span>
-            </div>
-            <div className="links">
+            </LinkHeading>
+            <Links>
               <ul>
                 <li>Instagram</li>
                 <li>Twitter</li>
                 <li>Facebook</li>
               </ul>
-            </div>
+            </Links>
           </div>
-        </div>
-      </div>
-      <div className="footer-bar"></div>
-      <div className="footer-rights">
+        </FooterRight>
+      </FooterBox>
+      <FooterBar></FooterBar>
+      <FooterRights>
         <span>©2023 CharterCar. All rights reserved</span>
-      </div>
-    </div>
+      </FooterRights>
+    </FooterContainer>
   );
 };
 

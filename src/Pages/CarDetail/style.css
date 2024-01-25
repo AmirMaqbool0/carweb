@@ -1,467 +1,217 @@
 .cardeatail-container {
-  width: 100%;
-  height: fit-content;
-  background: #f6f7f9;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  overflow: hidden;
+
   /* padding: 20px; */
 }
 .detail-box {
-  display: flex;
-  gap: 20px;
+  
 }
 
 .detail-box-left {
-  width: 65%;
-  height: 508px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+
 }
 .detail-box-left-logo {
-  width: 100%;
-  height: 60%;
+ 
 }
 .detail-box-left-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  
 }
 .detail-box-left-pics {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
+ 
 }
 .detailpic {
-  width: 148px;
-  height: 124px;
-  border-radius: 10px;
-  overflow: hidden;
+ 
 }
 .detailpic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+ 
 }
 .detail-box-right {
-  width: 33%;
-  height: 508px;
-  background: white;
-  padding: 10px;
-  display: flex;
-  gap: 30px;
-  flex-direction: column;
+ 
 }
 .car-name-review {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  
 }
 .car-name span {
-  color: var(--Secondary-500, #1a202c);
-
-  /* Bold/Type@32 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 48px */
-  letter-spacing: -0.96px;
+  
 }
 .review {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+ 
   /* justify-content: center; */
 }
 .review span {
-  color: #333;
-  font-family: "Plus Jakarta Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
+
 }
 .car-detail-text {
-  width: 444px;
+
 }
 .car-detail-text span {
-  color: #333;
-  font-family: "Plus Jakarta Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 200%; /* 40px */
-  letter-spacing: -0.4px;
+  
 }
 .car-detail-specification {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+ 
 }
 
 .specification-heading span {
-  color: var(--Secondary-300, var(--gray, #90a3bf));
-
-  /* Regular/Type@20 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 30px */
-  letter-spacing: -0.4px;
+ 
 }
 .specification-box {
-  display: flex;
-  gap: 30px;
-  width: 40%;
+
 }
 .specification span {
-  color: #333;
-  text-align: right;
-
-  /* Semibold/Type@20 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%; /* 30px */
-  letter-spacing: -0.4px;
+  
 }
 .car-detail-price-btn {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  
 }
 .car-details-price {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
+
 }
 .car-details-price h1 {
-  color: var(--Secondary-500, #1a202c);
-  font-family: "Plus Jakarta Sans";
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  
 }
 .car-details-price span {
-  color: var(--Secondary-300, #90a3bf);
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+ 
 }
 .car-details-price h2 {
-  color: var(--Secondary-300, var(--gray, #90a3bf));
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-decoration-line: strikethrough;
+ 
 }
 .car-detail-btn button {
-  display: flex;
-  width: 140px;
-  height: 56px;
-  padding: 0px 20px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 4px;
-  background: var(--blue, #3563e9);
-  color: var(--Primary-0, #fff);
-  text-align: center;
 
-  /* Bold/Type@16 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 24px */
-  letter-spacing: -0.32px;
-  cursor: pointer;
-  border: none;
 }
 .people-review-section {
-  width: 100%;
-  height: 452px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background: white;
+  
 }
 .people-review-heading {
-  display: flex;
-  gap: 20px;
+ 
 }
 .people-review-heading h3 {
-  color: var(--Secondary-500, #1a202c);
-  font-family: "Plus Jakarta Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: -0.4px;
+  
 }
 .people-review-heading span {
-  display: flex;
-  width: 44px;
-  height: 28px;
-  padding: 0px 20px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  background: var(--blue, #3563e9);
-  color: var(--Primary-0, #fff);
-  text-align: center;
-  font-family: "Plus Jakarta Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+ 
 }
 .people-review-box {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  
 }
 .people-review-upper {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+ 
 }
 .people-review-logo-name {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+ 
 }
 .people-review-logo {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  overflow: hidden;
+ 
 }
 .people-review-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
 }
 .people-review-name {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 174.149px;
+ 
 }
 .people-review-name h2 {
-  color: var(--Secondary-500, #1a202c);
-
-  /* Bold/Type@20 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 30px */
-  letter-spacing: -0.6px;
+ 
 }
 .people-review-name span {
-  color: var(--Secondary-500, #1a202c);
 
-  /* Bold/Type@20 */
-  font-family: " Plus Jakarta Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 30px */
-  letter-spacing: -0.6px;
 }
 .people-review-box-right {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+  
 }
 .people-review-date span {
-  color: var(--Secondary-300, var(--gray, #90a3bf));
-  text-align: right;
-
-  /* Medium/Type@14 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 21px */
-  letter-spacing: -0.28px;
+ 
 }
 .people-review-text {
-  margin-left: 80px;
+ 
 }
 .people-review-text span {
-  color: var(--Secondary-400, #596780);
-  font-family: " Plus Jakarta Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 200%; /* 28px */
-  letter-spacing: -0.28px;
+ 
 }
 .more-review-btn {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ 
 }
 .more-review-btn button {
-  display: flex;
-  width: 132px;
-  height: 44px;
-  padding: 0px 20px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border: none;
-  cursor: pointer;
+ 
 }
 .recent-car-section {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  padding: 20px;
+ 
 }
 .car-upper {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+
 }
 .car-heading span {
-  color: var(--Secondary-300, var(--gray, #90a3bf));
-  text-align: center;
-
-  /* Semibold/Type@16 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%; /* 24px */
-  letter-spacing: -0.32px;
+ 
 }
 .ccar-btn span {
-  color: var(--Primary-500, var(--blue, #3563e9));
-  text-align: center;
-
-  /* Semibold/Type@16 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%; /* 24px */
-  letter-spacing: -0.32px;
-  cursor: pointer;
+  
 }
 .recent-car-cards {
-  display: flex;
-  justify-content: space-between;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
+  
 }
 .recomend-car-section {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  padding: 20px;
+  
 }
 .recomend-car-card {
-  display: flex;
-  justify-content: space-between;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
+  
 }
 @media screen and (max-width: 1320px) {
   .detail-box-left {
-    width: 60%;
+  
   }
   .detail-box {
-    display: flex;
-    justify-content: space-between;
+    
   }
 }
 @media screen and (max-width: 1220px) {
   .detail-box {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-  }
+      }
   .detail-box-left {
-    width: 100%;
+    
   }
   .detail-box-right {
-    width: 100%;
-    height: fit-content;
+   
   }
   .detail-box-left-logo {
-    height: 70%;
+ 
   }
   .car-detail-text {
-    width: 100%;
+    
   }
 }
 @media screen and (max-width: 620px) {
   .people-review-section {
-    height: fit-content;
+    
   }
 }
 @media screen and (max-width: 710px) {
   .recent-car-cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ 
   }
   .recent-car-cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ 
   }
 }
 @media screen and (max-width: 480px) {
   .detailpic {
-    width: 25%;
+    
   }
   .specification-heading span {
-    font-size: 16px;
+   
   }
   .specification span {
-    font-size: 16px;
+   
   }
   .specification-box {
-    display: flex;
-    gap: 10px;
+    
   }
   .people-review-name h2{
-font-size: 16px;
+
   } .people-review-name span{
- font-size: 16px;
+
   }
   .people-review-upper {
-    display: flex;
-    gap: 0;
+   
   }
   .people-review-logo{
    
-      width: 36px;
-      height: 36px;
+    
   }
 }

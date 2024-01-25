@@ -8,8 +8,9 @@ import {
   FileStack,
   Heart,
 } from "lucide-react";
-import "./style.css";
+// import "./style.css";
 import { NavLink } from "react-router-dom";
+import { MenuBtn, NavbarContainer, ProfileCardLink, ProfileCardLinks, ProfileCardUserLogo, ProfileCardUserLogoName, ProfileCardUserName, User1, UserIcon,MainHideShow,NavBarMain, NavbarLogo } from "./style.js";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -21,11 +22,11 @@ const Navbar = () => {
     setShowProfile(!showProfile);
   };
   return (
-    <div className="navbar-container">
-      <div className="navbar-logo">
+    <NavbarContainer>
+      <NavbarLogo>
         <img src={Logo} alt="" />
-      </div>
-      <div className={showNav == false ? "nav-link" : "shownav"}>
+      </NavbarLogo>
+      <NavBarMain nav={showNav == false ? "nav-link" : "shownav"}>
         <ul>
           <NavLink to={"/"} style={{ textDecoration: "none" }}>
             {" "}
@@ -45,56 +46,56 @@ const Navbar = () => {
             </li>
           </NavLink>
         </ul>
-      </div>
-      <div className="user">
-        <div className="menu-btn">
+      </NavBarMain>
+      <User1>
+        <MenuBtn>
           <AlignJustify onClick={navcontrol} />
-        </div>
-        <div className="user-icon">
+        </MenuBtn>
+        <UserIcon>
           <UserRound color="#ffffff" onClick={showprofile} />
-        </div>
+        </UserIcon>
         <NavLink to={"/login"} style={{ textDecoration: "none" }}>
           {" "}
           <span>Sign in</span>{" "}
         </NavLink>
-      </div>
-      <div className={showProfile == false ? "hide-profile" : "profile-option"}>
-        <div className="profile-card-user-logo-name">
-          <div className="profile-card-user-logo">
+      </User1>
+      <MainHideShow option={showProfile == false ? "hide-profile" : "profile-option"}>
+        <ProfileCardUserLogoName>
+          <ProfileCardUserLogo>
             <UserRound color="#ffffff" />
-          </div>
-          <div className="profile-card-user-name">
+          </ProfileCardUserLogo>
+          <ProfileCardUserName>
             <h1>Taimoor A</h1>
             <span>View and Edit you Profile</span>
-          </div>
-        </div>
+          </ProfileCardUserName>
+        </ProfileCardUserLogoName>
 
-        <div className="profile-card-links">
-          <div className="profile-card-link">
+        <ProfileCardLinks>
+          <ProfileCardLink>
             <User />
             <NavLink to={"/userprofile"} style={{ textDecoration: "none" }}>
               <span>Profile</span>{" "}
             </NavLink>
-          </div>
-          <div className="profile-card-link">
+          </ProfileCardLink>
+          <ProfileCardLink>
             <Heart />
             <NavLink to={"/favriotcars"} style={{ textDecoration: "none" }}>
               <span>Favourite</span>
             </NavLink>
-          </div>
-          <div className="profile-card-link">
+          </ProfileCardLink>
+          <ProfileCardLink>
             <FileStack />
             <NavLink to={"/carhistory"} style={{ textDecoration: "none" }}>
               <span>History</span>
             </NavLink>
-          </div>
-          <div className="profile-card-link">
+          </ProfileCardLink>
+          <ProfileCardLink>
             <LogOut />
             <span>Logout</span>
-          </div>
-        </div>
-      </div>
-    </div>
+          </ProfileCardLink>
+        </ProfileCardLinks>
+      </MainHideShow>
+    </NavbarContainer>
   );
 };
 

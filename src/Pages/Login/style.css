@@ -1,227 +1,109 @@
 .login-container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
+
 }
 .left {
-  width: 50%;
-  height: 100%;
-  position: relative;
-  background: lightblue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
 }
 .left::before {
-  content: "";
-  position: absolute;
-  background: url(../../Assests/login.png);
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  inset: 0;
-  opacity: 0.2;
+ 
 }
 .right {
-  width: 50%;
-  height: 50%;
-  padding: 30px;
+
 }
 .login-box {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 50px;
+  
 }
 .login-box-text {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+
 }
 .login-box-text h1 {
-  color: #333;
-  text-align: center;
-  font-family: "Poppins";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 125%; /* 30px */
-  letter-spacing: 0.2px;
+
 }
 .login-box-text span {
-  color: var(--Greyscale-500, #64748b);
-  text-align: center;
-  font-family: "Poppins";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%; /* 22.4px */
+ 
 }
 .input-box-inputs {
-  width: 95%;
-  height: 400px;
-  border: 2px solid red;
-  display: flex;
-  flex-direction: column;
+  
 }
 .login-box-input-box {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  margin-top: 20px;
+ 
 }
 .login-box-input-box input {
-  display: flex;
-  width: 404px;
-  height: 56px;
-  padding: 8px 16px;
-  align-items: center;
-  gap: 12px;
-  border-radius: 10px;
-  border: 1px solid var(--Greyscale-200, #e2e8f0);
+ 
 }
 .forget-password {
-  width: 404px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+
 }
 .forget-password-check-box {
-  display: flex;
-  gap: 5px;
+
 }
 .forget-password-check-box span {
-  color: #333;
-  font-family: "Poppins";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 160%; /* 22.4px */
-  letter-spacing: 0.2px;
+
 }
 .forget-password-link span {
-  color: var(--blue, #3563e9);
-  text-align: right;
-  font-family: "Poppins";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 160%; /* 22.4px */
-  letter-spacing: 0.2px;
-  cursor: pointer;
+  
 }
 .login-page-login-btn {
-  margin-top: 20px;
+  
 }
 .login-page-login-btn button {
-  display: flex;
-  width: 404px;
-  height: 56px;
-  padding: 8px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 10px;
-  background: #3563e9;
-  border: none;
-  cursor: pointer;
-  color: white;
+
 }
 .ask-signup span {
-  color: var(--Black, #333);
-
-  /* P16/Regular */
-  font-family: "DM Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 170%; /* 27.2px */
+  
 }
 .other-login-option {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  
 }
 .ask-signup a {
-  color: var(--blue, #3563e9);
-  text-decoration: none;
+
 }
 .or {
-  text-align: center;
+  
 }
 .or span {
-  color: var(--gray, #90a3bf);
-  text-align: center;
-  font-family: "Inter";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 160%; /* 22.4px */
+ 
 }
 .other-option {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+ 
 }
 .other-option-box {
-  width: 404px;
-  height: 55px;
-  background: lightgray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  cursor: pointer;
+  
 }
 .other-option-box-logo {
-  width: 27px;
-  height: 27px;
-  overflow: hidden;
+ 
 }
 .other-option-box-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
 }
 @media screen and (max-width: 980px) {
   .left {
-    display: none !important;
+    
   }
   .left::before {
-    display: none;
+   
   }
   .right {
-    width: 100% !important;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 300px;
+   
   }
   .login-container {
-    height: fit-content;
+    
   }
   .login-box {
-    height: fit-content;
-    padding: 20px;
+   
   }
 }
 @media screen and (max-width: 450px) {
   .login-box-input-box input {
-    width: 304px;
+   
   }
   .forget-password {
-    width: 304px;
+   
   }
   .login-page-login-btn button {
-    width: 304px;
+  
   }
   .other-option-box {
-    width: 304px !important;
+    
   }
 }

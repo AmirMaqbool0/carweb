@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+// import "./style.css";
 import CardetailLogo from "../../Assests/cardetail.jpg";
 import Navbar from "../../Components/Navbar/Navbar";
 import Detailpic from "../../Assests/detailpic.png";
@@ -8,101 +8,103 @@ import ReviewLogo from "../../Assests/google.png";
 import CarCard from "../../Components/CarCard/CarCard";
 import Footer from "../../Components/Footer/Footer";
 import { NavLink } from "react-router-dom";
+import {CarDetailContainer,DetailBox,DetailBoxLeft,DetailBoxLeftLogo,DetailBoxLeftPics,DetailPic,DetailBoxRight,CarNameReview,CarName,Review,CarDetailText,CarDetailSpecification,Specification,SpecificationBox,SpecificationHeading,CarDetailBtn,CarDetailPrice,CarDetailPriveBtn,PeopleReviewBox,PeopleReviewHeading,PeopleReviewLogo,PeopleReviewLogoName,PeopleReviewName,PeopleReviewSection,PeopleReviewUpper,PeopleReviewBoxRight,PeopleReviewDate,PeopleReviewText,PeopleReviewbtn,RecentCarCards,RecentCarSection,CarBtn,CarUpper,CarHeading,RecomendCarCard,RecomendCarSection} from './style.js'
+
 const CarDetail = () => {
   return (
-    <div className="cardeatail-container">
+    <CarDetailContainer>
       <Navbar />
-      <div className="detail-box">
-        <div className="detail-box-left">
-          <div className="detail-box-left-logo">
+      <DetailBox>
+        <DetailBoxLeft>
+          <DetailBoxLeftLogo>
             <img src={CardetailLogo} alt="" />
-          </div>
-          <div className="detail-box-left-pics">
+          </DetailBoxLeftLogo>
+          <DetailBoxLeftPics>
             {Array(5)
               .fill()
               .map((item, i) => (
-                <div className="detailpic">
+                <DetailPic>
                   <img src={Detailpic} alt="" />
-                </div>
+                </DetailPic>
               ))}
-          </div>
-        </div>
-        <div className="detail-box-right">
-          <div className="car-name-review">
-            <div className="car-name">
+          </DetailBoxLeftPics>
+        </DetailBoxLeft>
+        <DetailBoxRight>
+          <CarNameReview>
+            <CarName>
               <span>Nissan GT - R</span>
-            </div>
-            <div className="review">
+            </CarName>
+            <Review>
               {Array(5)
                 .fill()
                 .map((item, i) => (
                   <Star fill="yellow" size={20} />
                 ))}
               <span>440+ Reviewer</span>
-            </div>
-          </div>
-          <div className="car-detail-text">
+            </Review>
+          </CarNameReview>
+          <CarDetailText>
             <span>
               NISMO has become the embodiment of Nissan's outstanding
               performance, inspired by the most unforgiving proving ground, the
               "race track".
             </span>
-          </div>
-          <div className="car-detail-specification">
+          </CarDetailText>
+          <CarDetailSpecification>
             {Array(4)
               .fill()
               .map((item, index) => (
-                <div className="specification-box">
-                  <div className="specification-heading">
+                <SpecificationBox>
+                  <SpecificationHeading>
                     <span>Type Car</span>
-                  </div>
-                  <div className="specification">
+                  </SpecificationHeading>
+                  <Specification>
                     <span>Sport</span>
-                  </div>
-                </div>
+                  </Specification>
+                </SpecificationBox>
               ))}
-          </div>
-          <div className="car-detail-price-btn">
-            <div className="car-details-price">
+          </CarDetailSpecification>
+          <CarDetailPriveBtn>
+            <CarDetailPrice>
               <h1>
                 $80.00/<span>days</span>{" "}
               </h1>
               <h2>$100.00</h2>
-            </div>
-            <div className="car-detail-btn">
+            </CarDetailPrice>
+            <CarDetailBtn>
               <NavLink to={"/carpayment"} style={{ textDecoration: "none" }}>
                 <button>Rent Now</button>
               </NavLink>
-            </div>
-          </div>
-        </div>
-      </div>
+            </CarDetailBtn>
+          </CarDetailPriveBtn>
+        </DetailBoxRight>
+      </DetailBox>
 
-      <div className="people-review-section">
-        <div className="people-review-heading">
+      <PeopleReviewSection>
+        <PeopleReviewHeading>
           <h3>Reviews</h3>
           <span>13</span>
-        </div>
+        </PeopleReviewHeading>
         {Array(2)
           .fill()
           .map((item, i) => (
-            <div className="people-review-box">
-              <div className="people-review-upper">
+            <PeopleReviewBox>
+              <PeopleReviewUpper>
                 <div className="people-review-box-left">
-                  <div className="people-review-logo-name">
-                    <div className="people-review-logo">
+                  <PeopleReviewLogoName>
+                    <PeopleReviewLogo>
                       <img src={ReviewLogo} alt="" />
-                    </div>
-                    <div className="people-review-name">
+                    </PeopleReviewLogo>
+                    <PeopleReviewName>
                       <h2>Alex Stanton</h2>
                       <span>CEO at Bukalapak</span>
-                    </div>
-                  </div>
+                    </PeopleReviewName>
+                  </PeopleReviewLogoName>
                 </div>
-                <div className="people-review-box-right">
-                  <div className="people-review-date">
+                <PeopleReviewBoxRight>
+                  <PeopleReviewDate>
                     <span>21 July 2022</span>
-                  </div>
+                  </PeopleReviewDate>
                   <div className="people-review-rating">
                     {Array(5)
                       .fill()
@@ -110,61 +112,61 @@ const CarDetail = () => {
                         <Star fill="yellow" size={16}/>
                       ))}
                   </div>
-                </div>
-              </div>
-              <div className="people-review-text">
+                </PeopleReviewBoxRight>
+              </PeopleReviewUpper>
+              <PeopleReviewText>
                 <span>
                   We are very happy with the service from the MORENT App. Morent
                   has a low price and also a large variety of cars with good and
                   comfortable facilities. In addition, the service provided by
                   the officers is also very friendly and very polite.
                 </span>
-              </div>
-            </div>
+              </PeopleReviewText>
+            </PeopleReviewBox>
           ))}
 
-        <div className="more-review-btn">
+        <PeopleReviewbtn>
           <button>
             Show All <ArrowDownToLine />
           </button>
-        </div>
-      </div>
-      <div className="recent-car-section">
-        <div className="car-upper">
-          <div className="car-heading">
+        </PeopleReviewbtn>
+      </PeopleReviewSection>
+      <RecentCarSection>
+        <CarUpper>
+          <CarHeading>
             <span>Recent Car</span>
-          </div>
-          <div className="ccar-btn">
+          </CarHeading>
+          <CarBtn>
             <span>View All</span>
-          </div>
-        </div>
-        <div className="recent-car-cards">
+          </CarBtn>
+        </CarUpper>
+        <RecentCarCards>
           {Array(4)
             .fill()
             .map((item, i) => (
               <CarCard />
             ))}
-        </div>
-      </div>
-      <div className="recomend-car-section">
-        <div className="car-upper">
-          <div className="car-heading">
+        </RecentCarCards>
+      </RecentCarSection>
+      <RecomendCarSection>
+        <CarUpper>
+          <CarHeading>
             <span>Recomendation Car</span>
-          </div>
-          <div className="ccar-btn">
+          </CarHeading>
+          <CarBtn>
             <span>View All</span>
-          </div>
-        </div>
-        <div className="recomend-car-card">
+          </CarBtn>
+        </CarUpper>
+        <RecomendCarCard>
           {Array(4)
             .fill()
             .map((item, i) => (
               <CarCard />
             ))}
-        </div>
-      </div>
+        </RecomendCarCard>
+      </RecomendCarSection>
       <Footer />
-    </div>
+    </CarDetailContainer>
   );
 };
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+// import "./style.css";
 import SigninLogo from "../../Assests/logo.png";
 import Google from "../../Assests/google.png";
 import Facebook from "../../Assests/facebook.svg";
@@ -7,27 +7,28 @@ import Apple from "../../Assests/apple.png";
 import { NavLink } from "react-router-dom";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
+import { SigninContainer,Left,Right,SigninBox,SigninBoxText, InputBoxInputs, SigninBoxInputBox, SigninPageLoginBtn, OtherLoginOption, AskSignUp, Or, OtherOption, OtherOptionBox, OtherOptionBoxLogo } from "./style.js";
 
 const Sign = () => {
   const [show, setShow] = useState(false);
   const [value, setValue] = useState();
   return (
-    <div className="signin-container">
-      <div className="left">
+    <SigninContainer>
+      <Left>
         <img src={SigninLogo} alt="" />
-      </div>
-      <div className="right">
-        <div className="signin-box">
+      </Left>
+      <Right>
+        <SigninBox>
           <div className="signin-box-logo">
             <img src={SigninLogo} alt="" />
           </div>
-          <div className="signin-box-text">
+          <SigninBoxText>
             <h1>Sign In to your Account</h1>
             <span>Welcome! please enter your detail</span>
-          </div>
+          </SigninBoxText>
 
-          <div className="signin-box-inputs">
-            <div className="signin-box-input-box">
+          <InputBoxInputs>
+            <SigninBoxInputBox>
               <span>Phone</span>
               <PhoneInput
                 placeholder="Enter phone number"
@@ -35,70 +36,70 @@ const Sign = () => {
                 onChange={setValue}
                 className="phone-input"
               />
-            </div>
-            <div className="signin-box-input-box">
+            </SigninBoxInputBox>
+            <SigninBoxInputBox>
               <span>Name</span>
               <input type="text" placeholder="Enter Your Name" />
-            </div>
-            <div className="signin-box-input-box">
+            </SigninBoxInputBox>
+            <SigninBoxInputBox>
               <span>Email</span>
               <input type="text" placeholder="Email" />
-            </div>
-            <div className="signin-box-input-box">
+            </SigninBoxInputBox>
+            <SigninBoxInputBox>
               <span>Password</span>
               <input
                 type={show == true ? "text" : "password"}
                 placeholder="Password"
               />
-            </div>
+            </SigninBoxInputBox>
 
-            <div className="signin-page-login-btn">
+            <SigninPageLoginBtn>
               <NavLink to={"/signinotp"} style={{ textDecoration: "none" }}>
                 {" "}
                 <button>Login</button>{" "}
               </NavLink>
-            </div>
-          </div>
-          <div className="other-login-option">
-            <div className="ask-signup">
+            </SigninPageLoginBtn>
+          </InputBoxInputs>
+          <OtherLoginOption>
+            <AskSignUp>
               <span>Already have an account?</span>
               <NavLink to={"/login"} style={{ textDecoration: "none" }}>
                 <a href=""> Login</a>
               </NavLink>
-            </div>
-            <div className="or">
+            </AskSignUp>
+            <Or>
               <span>Or</span>
-            </div>
-            <div className="other-option">
-              <div className="other-option-box">
-                <div className="other-option-box-logo">
+            </Or>
+            <OtherOption>
+              <OtherOptionBox>
+                <OtherOptionBoxLogo>
                   <img src={Google} alt="" />
-                </div>
+                </OtherOptionBoxLogo>
                 <div className="other-option-box-text">
                   <span>Sign in with Google</span>
                 </div>
-              </div>
-              <div className="other-option-box">
-                <div className="other-option-box-logo">
+              </OtherOptionBox>
+              <OtherOptionBox>
+                <OtherOptionBoxLogo>
                   <img src={Facebook} alt="" />
-                </div>
+                </OtherOptionBoxLogo>
                 <div className="other-option-box-text">
                   <span>Sign in with Facebook</span>
                 </div>
-              </div>
-              <div className="other-option-box">
-                <div className="other-option-box-logo">
+              </OtherOptionBox>
+              <OtherOptionBox>
+                <OtherOptionBoxLogo>
                   <img src={Apple} alt="" />
-                </div>
+                </OtherOptionBoxLogo>
                 <div className="other-option-box-text">
                   <span>Sign in with Apple</span>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+              </OtherOptionBox>
+            </OtherOption>
+          </OtherLoginOption>
+        </SigninBox>
+      </Right>
+    </SigninContainer>
   );
 };
 
