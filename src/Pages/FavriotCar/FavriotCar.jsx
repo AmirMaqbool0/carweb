@@ -1,5 +1,4 @@
 import React from "react";
-// import "./style.css";
 import CarCard from "../../Components/CarCard/CarCard";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";

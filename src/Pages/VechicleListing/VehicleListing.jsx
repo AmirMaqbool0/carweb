@@ -1,6 +1,6 @@
 import { Dropdown } from "primereact/dropdown";
 import React, { useState } from "react";
-import "./style.css";
+
 import Navbar from "../../Components/Navbar/Navbar";
 import CarCard from "../../Components/CarCard/CarCard";
 import Footer from "../../Components/Footer/Footer";

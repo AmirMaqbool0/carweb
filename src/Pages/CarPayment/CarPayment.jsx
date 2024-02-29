@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import "./style.css";
 import { Star, CircleDot, ShieldCheck } from "lucide-react";
 import PaymentCardLogo from "../../Assests/detailpic.png";
 

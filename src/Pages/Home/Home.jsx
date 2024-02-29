@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
-import "./style.css";
 import HomeBanner from "../../Components/HomeBanner/HomeBanner";
 import Discription from "../../Components/Discription/Discription";
 import CarCard from "../../Components/CarCard/CarCard";

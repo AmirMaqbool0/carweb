@@ -1,7 +1,6 @@
 import React from "react";
 import ForgerotpLogoPic from "../../Assests/logo.png";
 import Countdown from "react-countdown";
-import "./style.css";
 import { NavLink } from "react-router-dom";
 import { ForgetOtpBox, ForgetOtpBtn, ForgetOtpContainer, ForgetOtpInput, ForgetOtpInputs, ForgetOtpLeft, ForgetOtpRight, ForgetOtpText, Timer } from "./style.js";
 const SignOTP = () => {

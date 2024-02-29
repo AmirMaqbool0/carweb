@@ -1,5 +1,4 @@
 import React from "react";
-// import "./style.css";
 import CardetailLogo from "../../Assests/cardetail.jpg";
 import Navbar from "../../Components/Navbar/Navbar";
 import Detailpic from "../../Assests/detailpic.png";

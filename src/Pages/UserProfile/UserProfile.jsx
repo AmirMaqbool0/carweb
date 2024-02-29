@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import UserProfilLogoPic from "../../Assests/google.png";
